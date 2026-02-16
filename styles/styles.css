@@ -1,0 +1,246 @@
+body {
+  background-color: #f1e8e3;
+}
+p,
+h3 {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+h1,
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+/*NAV*/
+.glass-nav {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.btn-whatsapp {
+  background: #9b6f50;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-weight: 500;
+  backdrop-filter: blur(6px);
+}
+
+.btn-whatsapp:hover {
+  background: rgba(179, 160, 143, 0.95);
+  color: white;
+}
+
+@media (max-width: 991px) {
+  .glass-nav {
+    max-height: 75px;
+  }
+}
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url(../images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* Oscurece un poco la imagen */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.555);
+}
+
+/* Contenido arriba del overlay */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 20px;
+}
+
+/* Texto superior pequeño */
+.hero-top {
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+/* Título grande */
+.hero-title {
+  font-size: clamp(40px, 6vw, 80px);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Texto descriptivo */
+.hero-sub {
+  font-size: 18px;
+  opacity: 0.95;
+  margin-bottom: 30px;
+}
+
+/* Botón */
+.hero-btn {
+  background: #9b6f50;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 999px;
+  font-size: 16px;
+  backdrop-filter: blur(6px);
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background: rgba(179, 160, 143, 1);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/*CARDS*/
+.cards-con-icons {
+  background-color: #e9d9d2;
+}
+.feature-icon {
+  margin-bottom: 10px;
+  color: #6f3223;
+}
+
+.feature-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.feature-text {
+  font-size: 15px;
+  opacity: 0.8;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+/*PRODUCTOS*/
+.creaciones-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.creaciones-sub {
+  font-size: 16px;
+  opacity: 0.8;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.producto-img {
+  width: 100%;
+  height: 475px; /* altura fija (podés cambiarla) */
+  object-fit: cover; /* recorta sin deformar */
+  border-radius: 12px;
+  margin-bottom: 15px;
+  transition: 0.4s ease;
+}
+
+.producto:hover .producto-img {
+  transform: scale(1.05);
+}
+
+.producto-titulo {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/*FONDO*/
+.fondo {
+  padding: 50px;
+  width: 100%;
+  background-color: #6f3223;
+  border-radius: 12px;
+  color: #f1e8e3;
+  box-shadow: 0 10px 30px rgba(111, 50, 35, 0.35);
+
+}
+.btn-final {
+  color: #6f3223;
+  background: #f1e8e3;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 12px;
+  font-weight: 500;
+  backdrop-filter: blur(6px);
+  transition: 0.4s ease;
+}
+
+.btn-final:hover {
+  transform: scale(1.05);
+  color: #6f3223;
+  background: #f1e8e3;
+  
+}
+
+.footer {
+  background: #080909;   /* podés cambiar el color */
+}
+
+.footer-logo {
+  height: 100px;
+  width: auto;
+  margin-left: 2%;
+}
+.footer-redes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.social-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 45px;
+  height: 45px;
+  margin-left: 12px;
+
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+
+  transition: 0.3s ease;
+}
+
+/* Hover */
+.social-circle:hover {
+  background: rgba(255,255,255,0.08);
+  color: white;
+  transform: translateY(-3px);
+}
