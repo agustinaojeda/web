@@ -57,11 +57,10 @@ h2 {
 /* ===== HERO ===== */
 .hero {
   position: relative;
-  height: 95vh;
-  background-image: url(../images/hero.jpg);
+  min-height: 95vh;
+  background-image: url(../images/hero.webp);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 
   display: flex;
   align-items: center;
@@ -117,6 +116,15 @@ h2 {
   background: rgba(179, 160, 143, 1);
   color: white;
   transform: translateY(-2px);
+}
+.hero {
+  background-attachment: scroll;
+}
+
+@media (min-width: 992px) {
+  .hero {
+    background-attachment: fixed;
+  }
 }
 
 /*CARDS*/
