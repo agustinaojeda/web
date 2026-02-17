@@ -102,7 +102,7 @@ h2 {
 }
 
 .hero-btn {
-  background: #9b6f50;
+  background: #855a3d;
   color: white;
   border: none;
   padding: 14px 30px;
@@ -113,7 +113,7 @@ h2 {
 }
 
 .hero-btn:hover {
-  background: rgba(179, 160, 143, 1);
+  background: #866047;
   color: white;
   transform: translateY(-2px);
 }
@@ -162,9 +162,20 @@ h2 {
   margin: 0 auto;
 }
 
+.producto {
+  aspect-ratio: 800 / 980; 
+  background-color: #e9d9d2; 
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.producto-img {
+  height: auto;
+  display: block;
+}
+
 .producto-img {
   width: 100%;
-  height: 475px; 
   object-fit: cover; 
   border-radius: 12px;
   margin-bottom: 15px;
