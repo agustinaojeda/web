@@ -47,6 +47,8 @@
       "
     />
 
+    <link rel="preload" as="image" href="images/hero.webp" fetchpriority="high">
+
     <noscript>
       <link rel="stylesheet" href="styles/styles.css" />
     </noscript>
@@ -81,7 +83,7 @@
         <a
           href="https://wa.me/5492665008876?text=Hola%20quiero%20hacer%20un%20pedido"
           target="_blank"
-          class="btn hero-btn"
+          class="btn hero-btn" aria-label="Enviar mensaje por WhatsApp para hacer un pedido"
         >
           Hacé tu pedido
         </a>
@@ -205,13 +207,8 @@
             <div class="producto text-center">
               <img
                 src="images/portarretratos.webp"
-                srcset="
-                  images/portarretratos-400.webp 400w,
-                  images/portarretratos.webp 800w
-                "
-                sizes="(max-width:768px) 100vw, 33vw"
                 loading="lazy"
-                alt="portarretratos" class="img-fluid producto-img"
+                alt="portarretratos" class="img-fluid producto-img" width="800" height="980"
               />
               <h3 class="producto-titulo">Portarretratos Simple</h3>
             </div>
@@ -225,7 +222,7 @@
                 srcset="
                   images/tapizfiore-400.webp 400w,
                   images/tapizfiore.webp 800w
-                "
+                "width="800" height="980"
                 sizes="(max-width:768px) 100vw, 33vw"
                 loading="lazy"
                 alt="tapizfiore"  class="img-fluid producto-img"
@@ -242,7 +239,7 @@
                 srcset="
                   images/posavela-400.webp 400w,
                   images/posavela.webp 800w
-                "
+                "width="800" height="980"
                 sizes="(max-width:768px) 100vw, 33vw"
                 loading="lazy"
                 alt="posavela"  class="img-fluid producto-img"
@@ -259,8 +256,8 @@
                 src="images/posavelaestrella.webp"
                 srcset="
                   images/posavelaestrella-400.webp 400w,
-                  images/posavelaestrella.webp     800w
-                "
+                  images/posavelaestrella.webp 800w
+                "width="800" height="980"
                 sizes="(max-width:768px) 100vw, 33vw"
                 loading="lazy"
                 alt="Posavela estrella"  class="img-fluid producto-img"
@@ -274,7 +271,7 @@
             <div class="producto text-center">
               <img
                 src="images/espejo.webp"
-                srcset="images/espejo-400.webp 400w, images/espejo.webp 800w"
+                srcset="images/espejo-400.webp 400w, images/espejo.webp 800w"width="800" height="980"
                 sizes="(max-width:768px) 100vw, 33vw"
                 loading="lazy"
                 alt="Espejo Firenze en macramé"  class="img-fluid producto-img"
@@ -290,8 +287,8 @@
                 src="images/portamacetas.webp"
                 srcset="
                   images/portamacetas-400.webp 400w,
-                  images/portamacetas.webp     800w
-                "
+                  images/portamacetas.webp 800w
+                " width="800" height="980"
                 sizes="(max-width:768px) 100vw, 33vw"
                 loading="lazy"
                 alt="Portamacetas"  class="img-fluid producto-img"
@@ -349,7 +346,7 @@
           <a
             href="https://www.instagram.com/bittaura.artesanias/"
             target="_blank"
-            class="social-circle"
+            class="social-circle" aria-label="Contactar por Instagram"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -375,7 +372,7 @@
           <a
             href="https://wa.me/5492665008876?text=Hola%20quiero%20hacer%20un%20pedido"
             target="_blank"
-            class="social-circle"
+            class="social-circle" aria-label="Contactar por WhatsApp"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
