@@ -163,14 +163,12 @@ h2 {
 }
 
 .producto {
-  aspect-ratio: 800 / 980; 
-  background-color: #e9d9d2; 
   border-radius: 12px;
   overflow: hidden;
 }
 
 .producto-img {
-  height: auto;
+  height: 475px;
   display: block;
 }
 
